@@ -16,14 +16,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */ 
     flex-wrap: wrap;
 }
 
+.logo {
+    float: left;
+    margin-left: 50px;
+}
+
+.logo img {
+    width: 220px;
+}
 
 .menu > ul{
     display: flex;
    list-style: none;
+   float: right;
+   margin-right: 50px;
 }
 
 .menu ul li {
@@ -43,4 +53,8 @@
     background-color: cadetblue;
     font-size: 20px;
     border-radius: 10px;
+}
+
+.menu ul li a:hover {
+    color: rgb(58, 28, 107);
 }
