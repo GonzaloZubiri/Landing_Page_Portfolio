@@ -4,57 +4,69 @@
     box-sizing: border-box;
 }
 
-.header{
-    background-color:rgba(0,0,0,0.2);
+/* Header*/
+
+@media (min-width: 768px) {
+    .contenedor-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+ .header{
+    background-color:rgba(0,0,0,0.4);
     width: 100%;
-    position: fixed;
-    z-index: 1;
+    /* position: fixed;
+    z-index: 1; */
+    
 }
 
-.contenedor-menu {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */ 
-    flex-wrap: wrap;
-}
-
-.logo {
-    float: left;
-    margin-left: 50px;
-}
-
-.logo img {
-    width: 220px;
-}
-
-.menu > ul{
-    display: flex;
-   list-style: none;
-   float: right;
-   margin-right: 50px;
-}
-
-.menu ul li {
-    float: right;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-
-.menu ul li a {
-    display: block;
-    padding: 15px;
+.header a {
     color: black;
     text-decoration: none;
 }
 
-.menu ul li:hover {
-    background-color: cadetblue;
-    font-size: 20px;
-    border-radius: 10px;
+
+.header img {
+    width: 35%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.menu ul li a:hover {
-    color: rgb(58, 28, 107);
+@media (min-width: 768px) {
+    .header img {
+        width: 80%;
+    }
 }
+
+/*Barra de navegación*/
+
+.navbar a {
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    padding: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a:hover {
+    color: rgb(219, 168, 1);
+    width: 100%;
+    font-size: 22px;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar a {
+        display: inline;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+    .navbar a:last-of-type {
+        margin-right: 35px;
+    }
+}
+
